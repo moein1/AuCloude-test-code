@@ -1,0 +1,50 @@
+.auth{
+    @include flex;
+    min-height: 100vh;
+    @include gradient-background-main;
+    animation: animate-hue 10s linear infinite;
+    .box{
+        position: relative;
+        padding: 50px;
+        width: 360px;
+        height: 480px;
+        @include flex;
+        background: rgba(255,255,255, .1);
+        border-radius: 6px;
+        @include box-shadow-main;
+        &:after{
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border-radius: 5px;
+            pointer-events: none;
+            @include gradient-background-second;
+        }
+
+        .form{
+            position: relative;
+            width: 100%;
+            h2{
+                @include header1;
+                margin-bottom: 30px;
+            }
+            .remember{
+                position: relative;
+                display: inline-block;
+                color: #fff;
+                font-weight: 300;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+            p{
+                @include paragraph1;
+            }
+            a{
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+/* Buttons */
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    border: 1px #000 solid;
+    border-radius: 50px;
+    padding: 7px 16px;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    transition: background ease .4s;
+  }
+  
+  .btn-dark-outline {
+    border-color: #000;
+    color: #000;
+  }
+  
+  .btn-dark-outline:hover,
+  .btn-light-outline:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+  
+  .btn-light-outline {
+    border-color: #fff;
+    color: #fff;
+  }
+  
+  .btn-dark {
+    background: $nice-blue;
+    color: #fff;
+    &:hover{
+      background: darken($nice-blue, 5%);
+    }
+  }
+  
+ 
+  .button-disabled{
+    background-color: #ccc !important;
+    color: #888 !important;
+    cursor: not-allowed !important;
+    &:hover{
+      transform: scale(1) !important;
+    }
+  }
+
+  .leitner-button-area{
+    background: $light-gray;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+  }
+  .leitner-button{
+    cursor: pointer;
+    display: inline-block;
+    background: $nice-blue;
+    border-radius: 3px;
+    padding: 7px 16px;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+  }
+  .leitner-input-required{
+    background: #F8F2D6;
+  }
+  

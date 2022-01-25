@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vocab-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vocab
+  template:
+    metadata:
+      labels:
+        app: vocab
+    spec:
+      containers:
+        - name: vocab
+          image: us.gcr.io/leitner-336411/vocab
+          env:
+            - name: MONGO_URI
+              value: 'mongodb+srv://mohammad:mohammad@cluster0.1wwpx.mongodb.net/Vocab?retryWrites=true&w=majority'
+            - name: JWT_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: jwt-secret
+                  key: JWT_KEY
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vocab-srv
+spec:
+  selector:
+    app: vocab
+  ports:
+    - name: vocab
+      protocol: TCP
+      port: 3000
+      targetPort: 3000

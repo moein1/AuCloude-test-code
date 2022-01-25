@@ -1,0 +1,37 @@
+{
+  "name": "leitner",
+  "version": "1.0.0",
+  "description": "Learning the new word",
+  "main": "index.js",
+  "scripts": {
+    "start": "node sever/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moein1/Leitner.git"
+  },
+  "author": "Mohammad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moein1/Leitner/issues"
+  },
+  "homepage": "https://github.com/moein1/Leitner#readme",
+  "dependencies": {
+    "@types/cookie-session": "^2.0.42",
+    "@types/express": "^4.17.9",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/mongoose": "^5.10.3",
+    "@types/node": "^14.14.20",
+    "body-parser": "^1.19.1",
+    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.2.1",
+    "mongoose": "^5.13.13",
+    "ts-node-dev": "^1.1.1"
+  }
+}

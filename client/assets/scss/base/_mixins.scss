@@ -1,0 +1,47 @@
+@mixin flex($type:row,
+$justify:center,
+$align:center) {
+    display: flex;
+    flex-direction: $type;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin gradient-background-main {
+    background: linear-gradient(-30deg , #03a9f4 0%, #3a78b7 50%,
+    #262626 50%, #607d8b 100%);
+    //filter: hue-rotate(120deg);
+}
+
+@mixin  box-shadow-main {
+    box-shadow: 0 5px 35px rgba($color: #000000, $alpha: .2);
+    
+}
+
+@mixin gradient-background-second {
+    background: linear-gradient(to bottom , rgba(255,255,255,.3) 0% ,
+    rgba(255,255,255,.1) 15% , transparent 50%, transparent 85% , 
+    rgba(255,255,255,.3) 100%);
+}
+@mixin  header1 {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;    
+}
+
+@mixin  button-default {
+        background: #fff;
+        color: #111;
+        min-width: 100px;
+        padding: 8px 10px;
+        box-shadow: none;
+        font-weight: 500;
+        letter-spacing: 1px;
+        cursor: pointer;
+}
+
+@mixin  paragraph1 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 5px;
+}

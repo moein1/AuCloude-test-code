@@ -1,0 +1,19 @@
+.input-required{      
+   border: 1px solid $requird-color;
+   background: lighten($requird-color , 5%);
+}
+.input-error{
+    border: 1px solid $error-color !important;
+   background: lighten($error-color , 50%) !important;
+}
+.input-pending{
+    border: 1px solid $pending-color;
+   background: lighten($pending-color , 55%);
+}
+.label-error{
+    display: flex;
+    .error-section{
+        color:lighten($error-color, 45%);
+        margin-left: 5px;
+    }
+}
